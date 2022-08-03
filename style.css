@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #a45ef92b;
+}
+
+h3 {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.main-container {
+  min-height: 10vh;
+  width: 280px;
+  background: #e7f3f1;
+  border: 0.75em solid white;
+  border-radius: 10px;
+  padding: 0 1em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.main-form {
+  width: 100%;
+  margin: 15px 0;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+}
+
+.select_currency {
+  width: 100%;
+}
+
+.choose_title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #0b99c1;
+}
+
+select {
+  font-size: 14px;
+  width: 49%;
+
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(80, 79, 79);
+  background-color: white;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+select:hover {
+  color: #0b99c1;
+}
+
+option {
+  background-color: white;
+  font-weight: bold;
+  color: #0b99c1;
+}
+
+.select_summ {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  font-size: 14px;
+  margin-right: 15px;
+  padding: 5px 10px;;
+  font-weight: bold;
+  border: none;
+  color: rgb(80, 79, 79);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+input:hover {
+  color: #0b99c1;
+}
+
+hr {
+  width: 100%;
+  color: #e7f3f1cc;
+}
+
+.result-container {
+  display: flex;
+  background-color: white;
+  margin: 15px 0 0 0;
+  padding: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  color: rgb(80, 79, 79);
+}
