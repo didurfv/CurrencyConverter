@@ -8,36 +8,40 @@
     <link href="style.css" rel="stylesheet" />
 
     <title>Currency converter</title>
-
+    <h3>Обмін валют на <span id="date"></span></h3>
+    <h3 style="font-size:10px; margin-bottom: 10px; font-style: italic;">Поточний курс становить:<br>
+        <span id="kurs" onfocus="currentData()"></span></h3>
 </head>
 
 <body>
-    <h3>Обмін валют на <span id="date"></span></h3>
     <div class="main-container">
         <div class="main-form">
             <form class="select_currency">
                 <legend class="choose_title">Оберіть валюту:</legend>
-                <select id="currencyChoose1" name="currencyChoose" onchange="getData()">
-                    <option value="UAH">UAH</option>
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
-                </select>
-                <select id="currencyChoose2" name="currencyChoose" onchange="getData()">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="UAH">UAH</option>
-                </select>
+                <div class="currency-box">
+                    <select id="currencyChoose1" name="currencyChoose" onchange="getData()">
+                        <option value="UAH">UAH</option>
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                    <select id="currencyChoose2" name="currencyChoose" onchange="getData()">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="UAH">UAH</option>
+                    </select>
+                </div>
             </form>
             <form class="select_summ">
                 <legend class="choose_title">Оберіть cуму:</legend>
-                <input type="number" id="currencySum" name="currencySum" value="100.00" oninput="getData()">
+                <input type="number" id="currencySum" name="currencySum" value="100" oninput="getData()">
 
         </div>
         <hr>
         <div class="result-container">
             <div id="data"></div>
         </div>
-        <div style ="font-size:10px; margin-bottom: 10px; font-style: italic; text-align: right;">* курс за даними НБУ</div>
+        <div style="font-size:10px; margin-bottom: 10px; font-style: italic; text-align: right;">* курс за даними НБУ
+        </div>
     </div>
 
     <script src="main.js"></script>
